@@ -1,9 +1,7 @@
 import request from '@/utils/request'
+import user from './user'
 const index = {
-  // 登
-  login(data) {
-    return request.post('/api/manage/user/login', data)
-  }
+  ...user
 }
 request.install = function(Vue) {
   Vue.prototype.api = index

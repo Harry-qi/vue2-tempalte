@@ -1,4 +1,4 @@
-# zz-data
+# vue2-template
 
 ## Project setup
 ```

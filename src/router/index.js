@@ -8,13 +8,17 @@ export const Routes = [
     component: () => import('@/view/404'),
     hidden: true
   },
-
+  {
+    path: '/',
+    redirect: '/index'
+  },
   {
     path: '/index',
     name: 'Indx',
     meta: { title: '首页' },
     component: () => import('@/view/index/index')
   },
+
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
